@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sharda Infra & Consultant — Build Better. Bid Smarter.</title>
+<meta name="description" content="Sharda Infra & Consultant — tender bidding, estimation, billing, digital signatures and practical engineering internships.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--black:#10100e;--cream:#efe9dc;--orange:#ee7e22;--red:#a94228;--green:#2d5745;--grey:#8f8e87;--line:#292925}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--black);font-family:Manrope,sans-serif}a{text-decoration:none;color:inherit}
+.wrap{width:min(1380px,calc(100% - 48px));margin:auto}.mono{font:11px "DM Mono",monospace;letter-spacing:.08em}
+.nav{position:fixed;z-index:50;top:0;left:0;right:0;background:rgba(239,233,220,.82);backdrop-filter:blur(16px);border-bottom:1px solid rgba(16,16,14,.12)}
+.navin{height:78px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:18px;font-weight:800;letter-spacing:-.05em}.logo small{display:block;font:9px "DM Mono";letter-spacing:.12em;color:#666}
+.links{display:flex;gap:28px;font-size:12px;font-weight:700}.links a:hover{color:var(--orange)}.navbtn{background:var(--black);color:white;border-radius:100px;padding:13px 19px;font-size:11px;font-weight:800}
+.hero{min-height:900px;background:var(--cream);padding:150px 0 100px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 49.9%,rgba(16,16,14,.09) 50%,transparent 50.1%),linear-gradient(transparent 49.9%,rgba(16,16,14,.07) 50%,transparent 50.1%);background-size:120px 120px;opacity:.55}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:end}.kicker{color:var(--red);font-weight:800;font-size:12px;letter-spacing:.16em;margin-bottom:25px}
+h1{font-size:clamp(68px,10vw,145px);line-height:.78;letter-spacing:-.085em;margin:0;max-width:900px}h1 span{color:var(--orange)}h1 i{font-style:normal;-webkit-text-stroke:1px var(--black);color:transparent}
+.intro{font-size:18px;line-height:1.65;max-width:550px;color:#55534d;margin-top:34px}.hero-actions{display:flex;gap:10px;margin-top:30px;flex-wrap:wrap}.btn{padding:16px 22px;border-radius:100px;font-size:11px;font-weight:800;display:inline-flex;gap:9px;align-items:center;transition:.3s}.dark{background:var(--black);color:white}.outline{border:1px solid #aaa69b}.btn:hover{transform:translateY(-3px)}
+.blueprint{height:510px;border:1px solid #2d2d28;background:#171714;color:var(--cream);position:relative;overflow:hidden;border-radius:2px;transform:rotate(2deg);box-shadow:16px 18px 0 var(--orange);}.blueprint:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(239,233,220,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(239,233,220,.08) 1px,transparent 1px);background-size:38px 38px}
+.bptext{position:absolute;top:22px;left:22px;color:#aaa;font:10px "DM Mono"}.bpno{position:absolute;top:22px;right:22px;color:var(--orange);font:10px "DM Mono"}
+.house{position:absolute;left:14%;right:13%;top:28%;height:48%;border:1px solid var(--orange);transform:skewY(-8deg)}.house:before{content:"";position:absolute;left:16%;right:16%;top:18%;bottom:18%;border:1px solid #777}.house:after{content:"";position:absolute;left:50%;top:-20%;bottom:-20%;border-left:1px dashed #777}.pulse{position:absolute;left:0;right:0;height:1px;background:var(--orange);box-shadow:0 0 25px var(--orange);animation:pulse 4s linear infinite}@keyframes pulse{from{top:8%}to{top:92%}}
+.stamp{position:absolute;right:24px;bottom:28px;border:1px solid var(--orange);padding:9px 12px;color:var(--orange);font:10px "DM Mono";transform:rotate(-5deg)}
+.ticker{background:var(--orange);overflow:hidden;white-space:nowrap;border-block:1px solid #bd5d18}.ticker span{display:inline-block;padding:18px 0;font-weight:800;font-size:12px;animation:marquee 22s linear infinite}@keyframes marquee{to{transform:translateX(-50%)}}
+section{padding:135px 0}.darksec{background:var(--black);color:var(--cream)}.green{background:var(--green);color:var(--cream)}
+.sectiongrid{display:grid;grid-template-columns:.65fr 1.35fr;gap:60px}.tag{font:11px "DM Mono";color:var(--orange);letter-spacing:.1em}.darksec .tag{color:var(--orange)}
+h2{font-size:clamp(48px,6vw,84px);line-height:.88;letter-spacing:-.07em;margin:0}.sub{color:var(--grey);line-height:1.7;font-size:16px;max-width:620px;margin-top:25px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:65px}.service{min-height:390px;border:1px solid var(--line);padding:27px;position:relative;overflow:hidden;transition:.35s;background:#151513}.service:hover{transform:translateY(-8px);border-color:#555}.service .num{color:var(--orange);font:11px "DM Mono"}.service h3{font-size:25px;line-height:1;letter-spacing:-.05em;margin-top:90px;max-width:270px}.service p{color:var(--grey);font-size:13px;line-height:1.65;max-width:300px}.service a{position:absolute;bottom:25px;left:27px;font:10px "DM Mono"}.circle{position:absolute;width:210px;height:210px;border:1px solid rgba(238,126,34,.18);border-radius:50%;right:-90px;top:-90px}.circle:after{content:"";position:absolute;inset:28px;border:1px solid rgba(238,126,34,.13);border-radius:50%}
+.marquee-space{padding:100px 0 20px}.bigword{font-size:clamp(72px,13vw,190px);font-weight:800;letter-spacing:-.09em;line-height:.8;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(16,16,14,.45);animation:drift 9s ease-in-out infinite alternate}@keyframes drift{to{transform:translateX(-30px)}}
+.process{display:grid;grid-template-columns:1fr 1fr;gap:18px}.processcard{padding:55px;background:var(--cream);color:var(--black);min-height:520px}.processcard h2{margin-top:85px}.steps{border:1px solid rgba(239,233,220,.15);padding:10px}.step{display:grid;grid-template-columns:55px 150px 1fr;gap:15px;padding:29px 20px;border-bottom:1px solid rgba(239,233,220,.12)}.step:last-child{border:0}.stepno{color:var(--orange);font:11px "DM Mono"}.step strong{font-size:12px}.step p{margin:0;color:#999;font-size:13px;line-height:1.6}
+.intern{padding:65px;border:1px solid rgba(239,233,220,.18);position:relative;overflow:hidden}.intern h2{max-width:750px}.intern p{max-width:620px;color:#c5ccc7;line-height:1.7}.intern .btn{margin-top:20px;background:var(--cream);color:var(--black)}.rings{position:absolute;width:500px;height:500px;border:1px solid rgba(239,233,220,.15);border-radius:50%;right:-180px;bottom:-260px}.rings:after{content:"";position:absolute;inset:55px;border:1px solid rgba(239,233,220,.1);border-radius:50%}
+.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:15px}.contactmain{background:var(--orange);padding:60px;min-height:470px}.contactmain h2{margin-top:70px}.contactside{background:var(--black);color:var(--cream);padding:45px}.contactside h4{color:var(--orange);font:10px "DM Mono";margin:0 0 10px}.contactside a{font-size:20px;font-weight:700}.contactside p{color:#96958e;line-height:1.7;margin:8px 0 35px}
+footer{background:var(--black);color:#777;padding:30px 0}.foot{display:flex;justify-content:space-between;font:10px "DM Mono";gap:20px}
+.reveal{opacity:0;transform:translateY(35px);transition:.8s}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.links{display:none}.hero-grid,.sectiongrid,.process,.contact{grid-template-columns:1fr}.hero{padding-top:120px}.blueprint{height:420px}.services{grid-template-columns:1fr}.bigword{white-space:normal}.step{grid-template-columns:40px 120px 1fr}}
+@media(max-width:550px){.wrap{width:calc(100% - 30px)}h1{font-size:65px}.navin{height:68px}.navbtn{padding:11px 14px}.blueprint{box-shadow:9px 10px 0 var(--orange)}.processcard,.intern,.contactmain{padding:32px}.step{grid-template-columns:35px 1fr}.step p{grid-column:2}.foot{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.internship-enquiry{background:var(--cream);color:var(--black);padding:100px 0}
+.enquiry-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:7vw;align-items:start}
+.enquiry-copy{position:sticky;top:110px}
+.enquiry-copy h2{font-size:clamp(56px,7vw,110px);line-height:.86;letter-spacing:-.06em;margin:20px 0 30px}
+.enquiry-copy h2 span{color:var(--orange)}
+.enquiry-copy>p{max-width:500px;font-size:17px;line-height:1.65;opacity:.72}
+.enquiry-note{display:flex;gap:16px;border-top:1px solid rgba(16,16,14,.18);padding:16px 0;max-width:520px;font-size:13px}
+.enquiry-note b{font:11px "DM Mono";opacity:.5}.enquiry-note span{line-height:1.5}
+.enquiry-card{background:var(--black);color:var(--cream);padding:clamp(22px,4vw,50px);box-shadow:18px 18px 0 var(--orange)}
+.internship-form{display:flex;flex-direction:column;gap:17px}
+.form-heading{display:flex;justify-content:space-between;border-bottom:1px solid rgba(239,233,220,.2);padding-bottom:18px;font:13px "DM Mono";letter-spacing:.08em}.form-heading small{opacity:.5;font-size:10px}
+.form-section-title{font:10px "DM Mono";letter-spacing:.18em;color:var(--orange);padding-top:14px;margin-top:8px;border-top:1px solid rgba(239,233,220,.12)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.internship-form label{display:flex;flex-direction:column;gap:7px;font-size:12px}
+.internship-form input,.internship-form select,.internship-form textarea{box-sizing:border-box;width:100%;border:1px solid rgba(239,233,220,.25);background:rgba(239,233,220,.05);color:var(--cream);border-radius:0;padding:13px 14px;font:14px inherit;outline:none}
+.internship-form select option{background:var(--black)}.internship-form textarea{resize:vertical}
+.internship-form input:focus,.internship-form select:focus,.internship-form textarea:focus{border-color:var(--orange)}
+.checkbox-label{flex-direction:row!important;align-items:flex-start;gap:9px!important;line-height:1.5}.checkbox-label input{width:17px;min-width:17px;height:17px;margin-top:1px;accent-color:var(--orange)}
+.form-submit{border:0;background:var(--orange);color:#111;padding:18px;font:700 12px "DM Mono";letter-spacing:.08em;display:flex;justify-content:space-between;cursor:pointer}.form-submit b{font-size:18px}
+.form-status{font-size:13px;line-height:1.5;min-height:18px;margin:0}.form-status.success{color:#9fd0ae}.form-status.error{color:#ffad8f}
+@media(max-width:900px){.enquiry-grid{grid-template-columns:1fr}.enquiry-copy{position:static}.enquiry-card{box-shadow:10px 10px 0 var(--orange)}}
+@media(max-width:600px){.form-row{grid-template-columns:1fr}.enquiry-copy h2{font-size:58px}}
+
+
+/* ===== RESPONSIVE / MOBILE-FIRST POLISH ===== */
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{width:100%;min-width:0;overflow-x:hidden}
+img,svg,video{max-width:100%;height:auto}
+button,input,select,textarea{max-width:100%}
+.wrap{width:min(90vw,1450px);margin-inline:auto}
+
+@media (max-width:1200px){
+  .hero h1{font-size:clamp(64px,8.8vw,120px)}
+  .enquiry-grid{gap:5vw}
+}
+
+@media (max-width:1024px){
+  .hero{min-height:auto;padding-top:130px;padding-bottom:80px}
+  .hero-grid,.enquiry-grid{grid-template-columns:1fr}
+  .enquiry-copy{position:static}
+  .enquiry-card{margin-top:15px}
+  .services-grid,.approach-grid{grid-template-columns:repeat(2,1fr)}
+  .project-grid{grid-template-columns:1fr 1fr}
+}
+
+@media (max-width:767px){
+  /* Prevent accidental desktop-width elements */
+  .container,.wrap,.section,.hero,.nav{max-width:100%;box-sizing:border-box}
+
+  /* Navigation */
+  .nav{padding:14px 5vw}
+  .nav .logo{font-size:12px}
+  .nav-links{gap:12px}
+  .nav-links a{font-size:10px}
+
+  /* Hero */
+  .hero{padding:105px 5vw 58px}
+  .hero-grid{display:flex;flex-direction:column;gap:35px}
+  .hero h1{font-size:clamp(52px,15vw,82px);line-height:.86;letter-spacing:-.065em;max-width:100%;overflow-wrap:break-word}
+  .hero-copy{width:100%}
+  .hero-visual{width:100%;min-height:330px;aspect-ratio:1/1}
+
+  /* Marquee / large type */
+  .ticker{font-size:11px}
+  .ticker-track{gap:30px}
+  .display-line{font-size:clamp(48px,14vw,88px);white-space:nowrap}
+
+  /* Sections */
+  section{padding:70px 5vw}
+  .section-kicker{font-size:9px}
+  .section-title{font-size:clamp(42px,12vw,68px);line-height:.9}
+  .services-grid,.approach-grid,.project-grid{grid-template-columns:1fr}
+
+  /* Cards */
+  .service-card,.project-card{padding:24px 20px}
+
+  /* Internship */
+  .internship-enquiry{padding:72px 5vw}
+  .enquiry-grid{gap:42px}
+  .enquiry-copy h2{font-size:clamp(54px,15vw,78px);line-height:.86}
+  .enquiry-copy>p{font-size:15px;line-height:1.55}
+  .enquiry-card{padding:20px 15px;box-shadow:7px 7px 0 var(--orange)}
+  .form-row{grid-template-columns:1fr;gap:15px}
+  .internship-form{gap:15px}
+  .form-heading{font-size:11px;gap:8px;line-height:1.4}
+  .form-heading small{font-size:9px}
+  .form-section-title{font-size:9px;letter-spacing:.14em}
+  .internship-form input,.internship-form select,.internship-form textarea{
+    min-height:48px;
+    font-size:16px; /* avoids iOS zoom */
+    padding:12px;
+  }
+  .internship-form textarea{min-height:100px}
+  .checkbox-label{font-size:12px}
+  .checkbox-label input{min-height:17px}
+  .form-submit{min-height:54px;font-size:10px;padding:16px 13px}
+
+  /* Footer/contact */
+  .contact-grid{grid-template-columns:1fr!important}
+  footer{padding:35px 5vw}
+
+  /* Motion becomes subtle on small screens */
+  .reveal{transform:translateY(20px)}
+}
+
+@media (max-width:380px){
+  .hero{padding-top:92px}
+  .hero h1{font-size:50px}
+  .hero-visual{min-height:275px}
+  .enquiry-card{padding:17px 12px}
+  .form-submit{font-size:9px}
+}
+
+/* Landscape phones */
+@media (max-height:520px) and (orientation:landscape){
+  .hero{padding-top:95px}
+  .hero-visual{min-height:260px}
+}
+
+/* Respect device safe areas */
+@supports(padding:max(0px)){
+  .nav{padding-left:max(5vw,env(safe-area-inset-left));padding-right:max(5vw,env(safe-area-inset-right))}
+  footer{padding-bottom:max(35px,env(safe-area-inset-bottom))}
+}
+
+/* Keyboard / accessibility */
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wrap navin">
+<a class="logo" href="#">SHARDA <small>INFRA & CONSULTANT</small></a>
+<div class="links"><a href="#services">SERVICES</a><a href="#approach">APPROACH</a><a href="#internships">INTERNSHIPS</a><a href="#contact">CONTACT</a></div>
+<a class="navbtn" href="#contact">START A PROJECT ↗</a>
+</div></nav>
+
+<header class="hero"><div class="wrap hero-grid">
+<div class="reveal"><div class="kicker">CIVIL / ESTIMATION / CONSULTANCY</div><h1>BUILD<br><i>SMARTER.</i><br><span>BUILD</span><br>BETTER.</h1>
+<p class="intro">Sharda Infra & Consultant brings tender intelligence, estimation, billing and practical engineering support into one clear workflow.</p>
+<div class="hero-actions"><a class="btn dark" href="#services">EXPLORE SERVICES ↓</a><a class="btn outline" href="#contact">TALK TO US ↗</a></div></div>
+<div class="blueprint reveal"><div class="bptext">FIELD DRAWING / SIC-01</div><div class="bpno">DHANBAD / 826007</div><div class="house"></div><div class="pulse"></div><div class="stamp">PRECISION / 2026</div></div>
+</div></header>
+
+<div class="ticker"><span>TENDER BIDDING • ESTIMATION • BILLING • DIGITAL SIGNATURES • ENGINEERING INTERNSHIPS • TENDER BIDDING • ESTIMATION • BILLING • DIGITAL SIGNATURES • ENGINEERING INTERNSHIPS • </span></div>
+
+<section id="services" class="darksec"><div class="wrap">
+<div class="sectiongrid reveal"><div class="tag">01 / CAPABILITIES</div><div><h2>THE WORK<br>BEHIND THE BUILD.</h2><p class="sub">We handle the technical and commercial details that turn a project opportunity into a project you can confidently execute.</p></div></div>
+<div class="services">
+<article class="service reveal"><div class="num">01</div><div class="circle"></div><h3>TENDER BIDDING & ESTIMATION</h3><p>BOQs, rate analysis, quantity calculations and bid-ready estimation with a focus on accuracy and commercial clarity.</p><a href="#contact">DISCUSS THIS →</a></article>
+<article class="service reveal"><div class="num">02</div><div class="circle"></div><h3>BILLING & DIGITAL SIGNATURES</h3><p>Structured billing support, documentation and secure digital-signature workflows for smoother project administration.</p><a href="#contact">DISCUSS THIS →</a></article>
+<article class="service reveal"><div class="num">03</div><div class="circle"></div><h3>DIPLOMA ENGINEERING INTERNSHIPS</h3><p>Practical exposure to estimation, drawings, billing, documentation and the reality of construction sites.</p><a href="#internships">LEARN MORE →</a></article>
+</div></div></section>
+
+<div class="marquee-space"><div class="wrap"><div class="bigword">PRECISION / PRACTICALITY / PROGRESS</div></div></div>
+
+<section id="approach" class="darksec"><div class="wrap process">
+<div class="processcard reveal"><div class="tag">02 / APPROACH</div><h2>FROM<br>DRAWING<br>TO DOING.</h2><p class="sub" style="color:#5e5b54">A straightforward process built around clear inputs, reliable numbers and useful outputs.</p></div>
+<div class="steps reveal">
+<div class="step"><div class="stepno">01</div><strong>UNDERSTAND</strong><p>Scope, drawings, tender conditions and commercial intent.</p></div>
+<div class="step"><div class="stepno">02</div><strong>ESTIMATE</strong><p>Quantities, rates, assumptions and bid-ready calculations.</p></div>
+<div class="step"><div class="stepno">03</div><strong>DOCUMENT</strong><p>Billing, signatures and project paperwork kept organised.</p></div>
+<div class="step"><div class="stepno">04</div><strong>DELIVER</strong><p>Clear outputs, fast iteration and practical engineering support.</p></div>
+</div></div></section>
+
+
+<section id="internship-enquiry" class="internship-enquiry">
+  <div class="wrap">
+    <div class="section-kicker">03 / INTERNSHIP ENQUIRY</div>
+    <div class="enquiry-grid">
+      <div class="enquiry-copy reveal">
+        <div class="tag">START YOUR SITE JOURNEY</div>
+        <h2>APPLY FOR<br><span>INTERNSHIP.</span></h2>
+        <p>Tell us about yourself, your academic background and what you want to learn on site. Complete the form and our team can review your enquiry.</p>
+        <div class="enquiry-note"><b>01</b><span>Accurate academic & contact details</span></div>
+        <div class="enquiry-note"><b>02</b><span>Internship area, duration & preferred dates</span></div>
+        <div class="enquiry-note"><b>03</b><span>Resume / college documents, where applicable</span></div>
+      </div>
+      <div class="enquiry-card reveal">
+        <form id="internshipForm" class="internship-form" novalidate>
+          <div class="form-heading"><span>INTERNSHIP ENQUIRY FORM</span><small>* REQUIRED</small></div>
+
+          <div class="form-section-title">PERSONAL DETAILS</div>
+          <div class="form-row">
+            <label>Student Name *<input name="studentName" required></label>
+            <label>Father / Guardian Name *<input name="fatherName" required></label>
+          </div>
+          <div class="form-row">
+            <label>Date of Birth<input name="dob" type="date"></label>
+            <label>Gender<select name="gender"><option value="">Select</option><option>Male</option><option>Female</option><option>Other</option><option>Prefer not to say</option></select></label>
+          </div>
+
+          <div class="form-section-title">CONTACT DETAILS</div>
+          <div class="form-row">
+            <label>Mobile Number *<input name="mobile" type="tel" inputmode="tel" pattern="[0-9+() -]{10,}" required></label>
+            <label>Email Address *<input name="email" type="email" required></label>
+          </div>
+          <label>Full Address *<textarea name="address" rows="3" required></textarea></label>
+          <div class="form-row">
+            <label>City / Town *<input name="city" required></label>
+            <label>State *<input name="state" required></label>
+          </div>
+          <div class="form-row">
+            <label>PIN Code *<input name="pin" inputmode="numeric" pattern="[0-9]{6}" required></label>
+            <label>Emergency Contact<input name="emergencyContact" type="tel" inputmode="tel"></label>
+          </div>
+
+          <div class="form-section-title">ACADEMIC DETAILS</div>
+          <div class="form-row">
+            <label>Qualification *<input name="qualification" placeholder="e.g. Diploma Civil Engineering" required></label>
+            <label>Branch / Specialisation *<input name="branch" placeholder="e.g. Civil Engineering" required></label>
+          </div>
+          <div class="form-row">
+            <label>College / Institution Name *<input name="college" required></label>
+            <label>University / Board<input name="university"></label>
+          </div>
+          <div class="form-row">
+            <label>Current Year / Semester *<input name="yearSemester" placeholder="e.g. 3rd Year / 6th Sem" required></label>
+            <label>Enrollment / Roll No.<input name="rollNo"></label>
+          </div>
+          <div class="form-row">
+            <label>Academic Session<input name="session" placeholder="e.g. 2025–26"></label>
+            <label>Expected Graduation<input name="graduation"></label>
+          </div>
+
+          <div class="form-section-title">INTERNSHIP PREFERENCES</div>
+          <div class="form-row">
+            <label>Internship Area *<select name="internshipArea" required>
+              <option value="">Select an area</option><option>Site Engineering</option><option>Quantity Surveying / Estimation</option><option>Billing & Documentation</option><option>Tendering & Bidding</option><option>Project Coordination</option><option>Mixed / General Civil Engineering</option>
+            </select></label>
+            <label>Preferred Duration *<select name="duration" required>
+              <option value="">Select duration</option><option>2 Weeks</option><option>4 Weeks</option><option>6 Weeks</option><option>8 Weeks</option><option>12 Weeks</option><option>Other</option>
+            </select></label>
+          </div>
+          <div class="form-row">
+            <label>Preferred Start Date *<input name="startDate" type="date" required></label>
+            <label>Preferred End Date<input name="endDate" type="date"></label>
+          </div>
+          <label>Why do you want to join this internship? *<textarea name="motivation" rows="4" required></textarea></label>
+          <label>Skills / Software Known<textarea name="skills" rows="3" placeholder="e.g. AutoCAD, Excel, STAAD.Pro, MS Project, quantity estimation"></textarea></label>
+
+          <div class="form-section-title">DOCUMENTS & DECLARATION</div>
+          <label>Resume / CV (PDF, optional)<input name="resume" type="file" accept=".pdf,.doc,.docx"></label>
+          <label>College ID / Supporting Document (optional)<input name="collegeId" type="file" accept=".pdf,.jpg,.jpeg,.png"></label>
+          <label class="checkbox-label"><input name="declaration" type="checkbox" required><span>I confirm that the information provided is accurate and understand that submission does not guarantee internship placement. *</span></label>
+          <label class="checkbox-label"><input name="consent" type="checkbox" required><span>I consent to SHARDA INFRA & CONSULTANT contacting me regarding this internship enquiry. *</span></label>
+
+          <button type="submit" class="form-submit">SUBMIT INTERNSHIP ENQUIRY <b>↗</b></button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="internships" class="green"><div class="wrap"><div class="intern reveal"><div class="tag">03 / LEARNING ON SITE</div><h2>CLASSROOM<br>KNOWLEDGE.<br>REAL PROJECTS.</h2><p>Our Diploma Engineering Internship experience is designed to bridge the gap between what students learn and how construction work actually gets estimated, documented and delivered.</p><a class="btn" href="#contact">ENQUIRE ABOUT INTERNSHIPS ↗</a><div class="rings"></div></div></div></section>
+
+<section id="contact"><div class="wrap contact">
+<div class="contactmain reveal"><div class="tag" style="color:#6f2b18">04 / START SOMETHING REAL</div><h2>HAVE A TENDER?<br>LET'S TALK.</h2><p>Tell us what you're estimating, bidding or building.</p><a class="btn dark" href="tel:+917992305181">CALL +91 79923 05181 ↗</a></div>
+<div class="contactside reveal"><h4>OFFICE</h4><p>Ward No. 28, Housing Colony,<br>Chootanagpur School Building,<br>Dhanbad, Jharkhand — 826007</p><h4>PHONE</h4><a href="tel:+917992305181">+91 79923 05181</a><p>Mon–Fri · 09:00 AM–05:00 PM<br>Sat–Sun · Closed</p><h4>WEBSITE</h4><a href="https://www.shardainfrapro.in" target="_blank">shardainfrapro.in ↗</a></div>
+</div></section>
+
+<footer><div class="wrap foot"><span>© 2026 SHARDA INFRA & CONSULTANT</span><span>DHANBAD · JHARKHAND · INDIA</span></div></footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+const bp=document.querySelector('.blueprint');
+if(bp&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+bp.addEventListener('pointermove',e=>{const r=bp.getBoundingClientRect(),x=e.clientX/r.width-.5,y=e.clientY/r.height-.5;bp.style.transform=`rotate(2deg) perspective(900px) rotateX(${y*-2}deg) rotateY(${x*2}deg)`});
+bp.addEventListener('pointerleave',()=>bp.style.transform='rotate(2deg)');
+}
+
+document.getElementById('internshipForm')?.addEventListener('submit',function(e){
+  e.preventDefault();
+  const status=document.getElementById('formStatus');
+  if(!this.checkValidity()){this.reportValidity();status.textContent='Please complete all required fields.';status.className='form-status error';return;}
+  const name=new FormData(this).get('studentName')||'Student';
+  status.textContent=`Thank you, ${name}. Your internship enquiry is ready to be connected to your email/CRM backend.`;
+  status.className='form-status success';
+  this.reset();
+});
+
+
+// Responsive menu fallback: closes mobile navigation after selecting a link.
+document.querySelectorAll('.nav-links a').forEach(a=>{
+  a.addEventListener('click',()=>document.body.classList.remove('menu-open'));
+});
+
+
+const startDate = document.querySelector('input[name="startDate"]');
+const endDate = document.querySelector('input[name="endDate"]');
+if(startDate && endDate){
+  startDate.addEventListener('change',()=>{ endDate.min = startDate.value; });
+}
+
+</script>
+</body></html>
